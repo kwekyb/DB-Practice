@@ -52,8 +52,6 @@ class MainDB(QMainWindow):  # QMainWindow를 상속받아 메인 윈도우 생�
         sub_window = QMdiSubWindow()  # 서브 윈도우 생성
         sub_window.setWindowTitle("도서 테이블")  # 서브 윈도우 제목 설정
         sub_window.setMinimumSize(600, 400)  # 서브 윈도우 최소 크기 설정
-        sub_window.resize(800, 600)  # 서브 윈도우 크기 설정
-
         layout = QVBoxLayout()  # 레이아웃 생성
 
         self.book_table = QTableWidget(0, 4)  # 4열 테이블 위젯 생성

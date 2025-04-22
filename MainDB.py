@@ -109,6 +109,7 @@ class MainDB(QMainWindow):  # QMainWindow를 상속받아 메인 윈도우 생�
     def open_user_table(self):  # 사용자 테이블 열기 메서드
         sub_window = QMdiSubWindow()  # 서브 윈도우 생성
         sub_window.setWindowTitle("사용자 테이블")  # 서브 윈도우 제목 설정
+        sub_window.setMinimumSize(600, 400)  # 서브 윈도우 최소 크기 설정
         layout = QVBoxLayout()  # 레이아웃 생성
 
         self.user_table = QTableWidget(0, 3)  # 3열 테이블 위젯 생성
@@ -158,6 +159,7 @@ class MainDB(QMainWindow):  # QMainWindow를 상속받아 메인 윈도우 생�
     def open_loan_table(self):  # 대출현황 테이블 열기 메서드
         sub_window = QMdiSubWindow()  # 서브 윈도우 생성
         sub_window.setWindowTitle("대출현황 테이블")  # 서브 윈도우 제목 설정
+        sub_window.setMinimumSize(600, 400)  # 서브 윈도우 최소 크기 설정
         layout = QVBoxLayout()  # 레이아웃 생성
 
         self.loan_table = QTableWidget(0, 2)  # 2열 테이블 위젯 생성
